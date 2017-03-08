@@ -11,6 +11,5 @@ function update () {
 
   codeBox.textContent = content
   preview.innerHTML = content
-
 }
 firstName.addEventListener('input', update)
