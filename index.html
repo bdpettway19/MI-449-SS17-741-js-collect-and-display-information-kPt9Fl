@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>This is a title</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" rel="stylesheet">
+    <style>
+      /* Wrap code blocks instead of overflowing */
+      pre > code {
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <h1>Dating profile generator</h1>
+
+      <p class="tagline">
+        Create your own dating profile, that you fully own! Simply enter your personal information below and the HTML for your profile will start writing itself automatically.
+      </p>
+
+      <h2>Personal</h2>
+
+      <div class="row">
+        <div class="six columns">
+          <label>First name</label>
+          <input id ="firstname" type="text" class="u-full-width">
+        </div>
+        <div class="six columns">
+          <label>Last name</label>
+          <input id="lastname" type="text" class="u-full-width">
+        </div>
+      </div>
+      <label>Briefly describe yourself</label>
+      <textarea id="describe" class="u-full-width"></textarea>
+
+      <h2>Contact</h2>
+
+      <div class="row">
+        <div class="six columns">
+          <label>Email</label>
+          <input id="email" type="email" class="u-full-width">
+        </div>
+        <div class="six columns">
+          <label>Phone</label>
+          <input id="phone" type="tel" class="u-full-width">
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <h2>Preview</h2>
+          <div id="preview">
+            <h1>Hi, my name is FIRST_NAME LAST_NAME!</h1>
+              <p>DESCRIBE_YOURSELF_INFO</p>
+              <p>
+                If you're interested in a date, you can email me at
+                <a href="mailto:EMAIL_ADDRESS" target="_blank">EMAIL_ADDRESS</a>
+                or give me a call at
+                <a href="tel:PHONE_NUMBER" target="_blank">PHONE_NUMBER</a>.
+              </p>
+          </div>
+        </div>
+        <div class="six columns">
+          <h2>Generated HTML</h2>
+          <pre><code id="codebox">
+
+
+
+          </code></pre>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
